@@ -1,0 +1,6 @@
+if(${CMAKE_SYSTEM_NAME} STREQUAL "Windows")
+	set(OS_WINDOWS 1)
+else()
+	message(FATAL_ERROR "Unsupported operating system or environment")
+    return()
+endif()
